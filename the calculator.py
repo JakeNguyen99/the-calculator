@@ -16,7 +16,22 @@ class Calculator:
             raise ValueError("Cannot divide by zero")
         self.__result /= a
 
-    def 
+    def modulo(self, a):
+        if a == 0:
+            raise ValueError("Cannot divide by zero")
+        self.__result %= a
+
+    def power(self, a):
+        self.__result **= a
+
+    def square_root(self):
+        self.__result **= 0.5
+
+    def get_result(self):
+        return self.__result
+
+    def clear(self):
+        self.__result = 0
 
     
 
